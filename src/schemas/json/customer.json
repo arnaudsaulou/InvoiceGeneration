@@ -1,0 +1,10 @@
+{
+    "$id": "customer.json",
+    "$schema": "http://json-schema.org/schema",
+    "type": "object",
+    "properties": {
+        "name": { "type": "string" },
+        "address": { "$ref": "address.json" }
+    },
+    "required": ["name", "address"]
+}

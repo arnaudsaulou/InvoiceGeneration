@@ -1,0 +1,13 @@
+{
+    "$id": "biller.json",
+    "$schema": "http://json-schema.org/schema",
+    "type": "object",
+    "properties": {
+        "phoneNumber": { "type": "string" },
+        "email": { "type": "string" },
+        "invoiceLegalFooter": { "type": "string" },
+        "address": { "$ref": "address.json" }
+    },
+    "required": ["email", "invoiceLegalFooter", "address"],
+    "additionalProperties" : false
+}

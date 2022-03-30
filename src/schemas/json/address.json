@@ -1,0 +1,15 @@
+{
+    "$id": "address.json",
+    "$schema": "http://json-schema.org/schema",
+    "type": "object",
+    "properties": {
+        "street": { "type": "string" },
+        "city": { "type": "string" },
+        "zipcode": { "type": "string" },
+        "state": { "type": ["string", "null"] },
+        "country": { "type": "string" },
+        "additional": { "type": ["string", "null"] }
+    },
+    "required": ["street", "city", "country"],
+    "additionalProperties" : false
+}

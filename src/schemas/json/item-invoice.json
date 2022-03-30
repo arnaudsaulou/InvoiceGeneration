@@ -1,0 +1,13 @@
+{
+    "$id": "item-invoice.json",
+    "$schema": "http://json-schema.org/schema",
+    "type": "object",
+    "properties": {
+        "description": { "type": "string" },
+        "quantity": { "type": "integer", "minimum": 1 },
+        "unitPriceWithoutTax": { "type": "number", "minimum": 0 },
+        "taxPercent": { "type": "integer", "minimum": 0, "maximum": 100 }
+    },
+    "required": ["quantity", "unitPriceWithoutTax", "taxPercent"],
+    "additionalProperties" : false
+}
